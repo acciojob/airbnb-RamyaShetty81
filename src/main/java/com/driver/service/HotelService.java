@@ -15,8 +15,8 @@ import java.util.UUID;
 @Service
 public class HotelService {
 
-    @Autowired
-    HotelRepository hotelRepository;
+    //@Autowired
+    HotelRepository hotelRepository = new HotelRepository();
     public String addHotel(Hotel hotel){
 
         //You need to add an hotel to the database
