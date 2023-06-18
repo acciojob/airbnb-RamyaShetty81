@@ -52,7 +52,7 @@ public class HotelService {
         String ans = "";
         for(Hotel hotel: hotelRepository.hotelDb.values())
         {
-            if(hotel.getFacilities().size()>=max )
+            if(hotel.getFacilities().size()>=max && hotel.getFacilities().size()>=1)
             {
                 if(max == hotel.getFacilities().size() && hotel.getHotelName().compareTo(ans)<0) ans = hotel.getHotelName();
                 else {
